@@ -1,0 +1,18 @@
+{
+  "name": "deploying-fullstack-with-heroku-sample",
+  "version": "1.0.0",
+  "description": "back-end for the front-end to be used as an example for how to deploy a fullstack app using Heroku.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf build && cd ../client && npm run build --prod && cp -r build ../server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "pg": "^8.5.1"
+  }
+}
